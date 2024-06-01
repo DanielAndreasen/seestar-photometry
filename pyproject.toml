@@ -1,0 +1,24 @@
+[project]
+name = "seestar-photometry"
+version = "0.1.0"
+description = "Do differential photometry with the Seestar S50 smart telescope"
+authors = [
+    { name = "Daniel T. Andreasen", email = "daniel@hermod.space" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/seestar_photometry"]
